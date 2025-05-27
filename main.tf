@@ -21,3 +21,8 @@ output "subnet_ids" {
   # value       = data.aws_subnets.names.ids[*]  
   description = "A list of IDs of the specified subnets"
 }
+
+output "vpc_id_name" {
+  value       = var.vpcId
+  description = "id of the vpc"
+}
